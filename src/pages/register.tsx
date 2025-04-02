@@ -1,4 +1,3 @@
-import React from 'react'
 import RegisterForm from '../components/molecules/registerForm'
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/card'
 

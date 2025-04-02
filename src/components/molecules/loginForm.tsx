@@ -11,7 +11,6 @@ import {
 } from "../ui/form";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
-import { useStore } from "../../store";
 
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../lib/firebase";
@@ -27,8 +26,6 @@ const formSchema = z.object({
 });
 
 const LoginForm = () => {
-  //
-  const { loggedIn, logIn } = useStore();
   const navigate = useNavigate();
   console.log(auth.currentUser?.email);
   const form = useForm<z.infer<typeof formSchema>>({
@@ -44,12 +41,10 @@ const LoginForm = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
-        logIn();
         navigate("/");
       })
-      .catch((error) => {
-        const errorCode: string = error.code;
-        const errorMessage: string = error.message;
+      .catch((error) => { 
+        console.log(error);
       });
   }
 

@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react'
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '../components/ui/card'
 import LoginForm from '../components/molecules/loginForm'
-import { Link, Navigate } from 'react-router-dom'
-import {auth} from '../lib/firebase'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
  

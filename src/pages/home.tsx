@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { Button } from '../components/ui/button'
 import { DataTable } from '../components/ui/transactionsDataTable'
-import { Input } from '../components/ui/input'
 import {signOut} from 'firebase/auth'
 import { collection,getDocs, query, where } from 'firebase/firestore'
 
@@ -20,12 +19,12 @@ import { db } from '../lib/firebase'
 import { useState } from 'react'
 import { columns } from '../components/ui/transactionColumns'
 import { useStore } from '../store'
-import  image  from '../components/images/expenses.jpg'
 
 
 
 const Home = () => {
 const navigate = useNavigate()
+//@ts-expect-error
 const {loggedIn , logOut} = useStore()
 const[transactionList,setTransactionList] =useState([{
 
