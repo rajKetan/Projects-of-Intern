@@ -1,31 +1,61 @@
-# React + TypeScript + Vite
+# 💸 Expense Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive full-stack Expense Tracker application built using **React**, **TypeScript**, **Vite**, **Firebase**, and **shadcn/ui**. This app allows users to track their daily expenses, categorize them, and visualize spending patterns with a clean and intuitive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Link
+(https://projects-of-intern.vercel.app/)
 
-## Expanding the ESLint configuration
+## 🧪 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**: React + TypeScript + Vite
+- **UI Library**: [shadcn/ui](https://ui.shadcn.com/)
+- **Styling**: Tailwind CSS
+- **Backend**: Firebase (Firestore + Auth)
+- **State Management**: React Hooks, Context API
+- **Validation**: ZOD (for input schema validation)
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## 📸 Screenshots
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-"# Projects-of-Intern" 
+### 🧾 Expense Page
+![Expense Page](https://github.com/user-attachments/assets/eb86517d-bdbd-4c39-8161-ca8fca1c9749)
+
+### 🔐 Login Page
+![Login Page](https://github.com/user-attachments/assets/6ccaab82-5f8a-4c7f-8565-17ed670460bf)
+
+---
+
+## ⚙️ Project Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/expense-tracker-app.git
+   cd expense-tracker-app
+
+2.  **Install dependencies**
+
+3. **ENV setup**
+  VITE_FIREBASE_API_KEY=your-api-key
+  VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
+  VITE_FIREBASE_PROJECT_ID=your-project-id
+  VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+  VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+  VITE_FIREBASE_APP_ID=your-app-id
+
+4 . **Folder Structure**
+src/
+├── assets/             # Images and icons
+├── components/         # Shared components (Buttons, Cards, Inputs, etc.)
+├── context/            # Auth and expense tracking contexts
+├── hooks/              # Custom React hooks
+├── pages/              # App pages like Login, Register, Dashboard
+├── services/           # Firebase services (auth, db)
+├── utils/              # Utility functions and constants
+├── App.tsx             # Main app component with routes
+├── main.tsx            # Entry point
+└
+
+
